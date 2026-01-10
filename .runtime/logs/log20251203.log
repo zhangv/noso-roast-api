@@ -1,0 +1,27 @@
+[INFO][auto_rotation.go:121]2025/12/04 02:24:46 日志轮转完成
+[INFO][logger.go:44]2025/12/04 10:21:02 [GIN]  | 204  |   13.324167ms |             ::1 |  OPTIONS  /cupping/sample/115
+[INFO][logger.go:44]2025/12/04 10:21:02 [GIN]  | 200  |  113.997666ms |             ::1 |  GET  /cupping/sample/115
+[INFO][logger.go:44]2025/12/04 10:21:02 [GIN]  | 204  |      13.791µs |             ::1 |  OPTIONS  /cupping/score?sample_id=115
+[INFO][logger.go:44]2025/12/04 10:21:02 [GIN]  | 200  |   46.412417ms |             ::1 |  GET  /cupping/score?sample_id=115
+[INFO][logger.go:44]2025/12/04 10:21:03 [GIN]  | 204  |      16.667µs |             ::1 |  OPTIONS  /cupping/sample/115/scoresummary
+[INFO][logger.go:44]2025/12/04 10:21:03 [GIN]  | 200  |   18.954917ms |             ::1 |  GET  /cupping/sample/115/scoresummary
+[INFO][logger.go:44]2025/12/04 10:21:13 [GIN]  | 204  |      38.458µs |             ::1 |  OPTIONS  /cupping/sample/115
+[INFO][logger.go:44]2025/12/04 10:21:13 [GIN]  | 200  |      3.2835ms |             ::1 |  GET  /cupping/sample/115
+[INFO][logger.go:44]2025/12/04 10:22:54 [GIN]  | 204  |   17.810375ms |             ::1 |  OPTIONS  /cupping/sample/115
+[INFO][logger.go:44]2025/12/04 10:22:54 [GIN]  | 200  |  157.429208ms |             ::1 |  GET  /cupping/sample/115
+[INFO][logger.go:44]2025/12/04 10:22:54 [GIN]  | 204  |       9.167µs |             ::1 |  OPTIONS  /cupping/score?sample_id=115
+[INFO][logger.go:44]2025/12/04 10:22:54 [GIN]  | 200  |   28.487208ms |             ::1 |  GET  /cupping/score?sample_id=115
+[INFO][logger.go:44]2025/12/04 10:22:54 [GIN]  | 204  |      12.875µs |             ::1 |  OPTIONS  /cupping/sample/115/scoresummary
+[INFO][logger.go:44]2025/12/04 10:22:54 [GIN]  | 200  |   10.635292ms |             ::1 |  GET  /cupping/sample/115/scoresummary
+[INFO][logger.go:44]2025/12/04 10:31:21 [GIN]  | 204  |      27.417µs |             ::1 |  OPTIONS  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 10:31:21 [GIN]  | 200  |   42.402958ms |             ::1 |  GET  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 10:32:26 [GIN]  | 204  |       8.083µs |             ::1 |  OPTIONS  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 10:32:26 [GIN]  | 200  |    35.09775ms |             ::1 |  GET  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 10:32:44 [GIN]  | 204  |       6.625µs |             ::1 |  OPTIONS  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 10:32:44 [GIN]  | 200  |   30.448333ms |             ::1 |  GET  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 10:37:10 [GIN]  | 204  |      101.75µs |             ::1 |  OPTIONS  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 10:37:10 [GIN]  | 200  |   60.296458ms |             ::1 |  GET  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 10:37:13 [GIN]  | 204  |       4.875µs |             ::1 |  OPTIONS  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 10:37:13 [GIN]  | 200  |   22.972416ms |             ::1 |  GET  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 10:37:23 [GIN]  | 204  |       3.875µs |             ::1 |  OPTIONS  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 10:37:23 [GIN]  | 200  |   32.088875ms |             ::1 |  GET  /bean/allprice?leveltype=c&pagesize=100&owner=shop

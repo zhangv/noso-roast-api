@@ -1,0 +1,24 @@
+{
+	"server": {
+		"mode": "release",
+		"port": 8000
+	},
+	"db": {
+		"driver": "mysql",
+		"host": "192.168.1.2",
+		"port": "3306",
+		"user": "hahacking",
+		"password": "Woshi1630@",
+		"database": "noso"
+	},
+	"db2": {
+		"driver": "mysql",
+		"dsn": "hahacking:Woshi1630@@tcp(192.168.1.2:3306)/noso"
+	},
+	"redis": {
+		"host": "192.168.1.4",
+		"port": "6379",
+		"password": "",
+		"db": 7
+	}
+}

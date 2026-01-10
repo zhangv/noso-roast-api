@@ -1,0 +1,796 @@
+?   	hahacking	[no test files]
+?   	hahacking/common/app	[no test files]
+?   	hahacking/common/file	[no test files]
+?   	hahacking/common/gredis	[no test files]
+?   	hahacking/common/job	[no test files]
+?   	hahacking/common/logger	[no test files]
+?   	hahacking/common/ret	[no test files]
+FAIL	hahacking/common/util [build failed]
+FAIL	hahacking/config [build failed]
+?   	hahacking/database	[no test files]
+?   	hahacking/database/datatypes	[no test files]
+?   	hahacking/deploy	[no test files]
+?   	hahacking/i18n	[no test files]
+?   	hahacking/middleware	[no test files]
+?   	hahacking/models	[no test files]
+?   	hahacking/models/acl	[no test files]
+?   	hahacking/models/card	[no test files]
+?   	hahacking/models/cupping	[no test files]
+?   	hahacking/models/item	[no test files]
+?   	hahacking/models/price	[no test files]
+?   	hahacking/models/roast	[no test files]
+?   	hahacking/models/shop	[no test files]
+?   	hahacking/routers/auth	[no test files]
+?   	hahacking/routers	[no test files]
+?   	hahacking/models/user	[no test files]
+?   	hahacking/routers/bean	[no test files]
+FAIL	hahacking/routers/cupping [build failed]
+?   	hahacking/routers/price	[no test files]
+?   	hahacking/routers/shop	[no test files]
+?   	hahacking/routers/user	[no test files]
+?   	hahacking/utils/acl	[no test files]
+?   	hahacking/utils	[no test files]
+?   	hahacking/utils/api	[no test files]
+?   	hahacking/utils/cache	[no test files]
+?   	hahacking/utils/db	[no test files]
+2025/04/07 12:26:36 xxxxxxxxxxxxdbConfig map[]
+panic: interface conversion: interface {} is nil, not string
+
+goroutine 1 [running]:
+hahacking/database.InitDB({{0x102c0827c, 0x6}, {0x102c1191a, 0x1a}, 0x0})
+	/Users/derekzhangv/Develop/sites/noso/api-go/database/database.go:44 +0x714
+hahacking/models/bean.setupTestDB()
+	/Users/derekzhangv/Develop/sites/noso/api-go/models/bean/bean_test.go:14 +0x44
+hahacking/models/bean.TestMain(0x14000209540)
+	/Users/derekzhangv/Develop/sites/noso/api-go/models/bean/bean_test.go:26 +0x20
+main.main()
+	_testmain.go:47 +0x98
+FAIL	hahacking/models/bean	0.761s
+=== RUN   TestGetById
+2025/04/07 12:26:36 xxxxxxxxxxxxdbConfig map[driver:mysql dsn:root:root@tcp(127.0.0.1:3306)/noso?parseTime=true]
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.106ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.982ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.297ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'noso' AND table_name = 't_order' AND table_type = 'BASE TABLE'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.082ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.616ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.315ms] [rows:-] SELECT * FROM `t_order` LIMIT 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.678ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'noso' AND table_name = 't_order' ORDER BY ORDINAL_POSITION
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.079ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.563ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.269ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'noso' AND table_name = 't_order_item' AND table_type = 'BASE TABLE'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.065ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.494ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.311ms] [rows:-] SELECT * FROM `t_order_item` LIMIT 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.555ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'noso' AND table_name = 't_order_item' ORDER BY ORDINAL_POSITION
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.112ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.778ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[1.281ms] [rows:-] SELECT count(*) FROM INFORMATION_SCHEMA.table_constraints WHERE constraint_schema = 'noso' AND table_name = 't_order_item' AND constraint_name = 'fk_t_order_order_items'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.112ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.615ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.314ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'noso' AND table_name = 't_order_payment' AND table_type = 'BASE TABLE'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.105ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.791ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.286ms] [rows:-] SELECT * FROM `t_order_payment` LIMIT 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.722ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'noso' AND table_name = 't_order_payment' ORDER BY ORDINAL_POSITION
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.103ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.691ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.237ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'noso' AND table_name = 't_order_payment_item' AND table_type = 'BASE TABLE'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.060ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.504ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.195ms] [rows:-] SELECT * FROM `t_order_payment_item` LIMIT 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.456ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'noso' AND table_name = 't_order_payment_item' ORDER BY ORDINAL_POSITION
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.064ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.446ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.776ms] [rows:-] SELECT count(*) FROM INFORMATION_SCHEMA.table_constraints WHERE constraint_schema = 'noso' AND table_name = 't_order_payment_item' AND constraint_name = 'fk_t_order_payment_items'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:220
+[1.596ms] [rows:1] UPDATE `t_order` SET `sn`='20250407000047',`updated_at`='2025-04-07 12:26:36.352' WHERE `t_order`.`deleted_at` IS NULL AND `id` = 47
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:200
+[2.111ms] [rows:1] INSERT INTO `t_order` (`created_at`,`updated_at`,`deleted_at`,`user_id`,`sn`,`date`,`totalamt`,`payamt`,`totalqty`,`memo`,`pics`,`status`,`orderpayment_id`) VALUES ('2025-04-07 12:26:36.352','2025-04-07 12:26:36.352',NULL,NULL,'','2025-04-07',100,0,10,'','','created',NULL)
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:206
+[0.263ms] [rows:1] INSERT INTO `t_order_item` (`created_at`,`updated_at`,`deleted_at`,`order_id`,`bean_id`,`bean_name`,`qty`,`price`,`amt`) VALUES ('2025-04-07 12:26:36.354','2025-04-07 12:26:36.354',NULL,47,1,'Test Bean',5,10,50)
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:74
+[0.383ms] [rows:1] SELECT * FROM `t_order` WHERE id = 47 AND `t_order`.`deleted_at` IS NULL ORDER BY `t_order`.`id` LIMIT 1
+--- PASS: TestGetById (0.02s)
+=== RUN   TestSearch
+2025/04/07 12:26:36 xxxxxxxxxxxxdbConfig map[driver:mysql dsn:root:root@tcp(127.0.0.1:3306)/noso?parseTime=true]
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.068ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.556ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.284ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'noso' AND table_name = 't_order' AND table_type = 'BASE TABLE'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.076ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.637ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.264ms] [rows:-] SELECT * FROM `t_order` LIMIT 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.585ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'noso' AND table_name = 't_order' ORDER BY ORDINAL_POSITION
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.074ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.631ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.209ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'noso' AND table_name = 't_order_item' AND table_type = 'BASE TABLE'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.069ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.486ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.256ms] [rows:-] SELECT * FROM `t_order_item` LIMIT 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.389ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'noso' AND table_name = 't_order_item' ORDER BY ORDINAL_POSITION
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.059ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.480ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.796ms] [rows:-] SELECT count(*) FROM INFORMATION_SCHEMA.table_constraints WHERE constraint_schema = 'noso' AND table_name = 't_order_item' AND constraint_name = 'fk_t_order_order_items'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.095ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.453ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.194ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'noso' AND table_name = 't_order_payment' AND table_type = 'BASE TABLE'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.068ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.443ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.371ms] [rows:-] SELECT * FROM `t_order_payment` LIMIT 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.460ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'noso' AND table_name = 't_order_payment' ORDER BY ORDINAL_POSITION
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.073ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.394ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.217ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'noso' AND table_name = 't_order_payment_item' AND table_type = 'BASE TABLE'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.062ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.285ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.194ms] [rows:-] SELECT * FROM `t_order_payment_item` LIMIT 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.267ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'noso' AND table_name = 't_order_payment_item' ORDER BY ORDINAL_POSITION
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.053ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.256ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.438ms] [rows:-] SELECT count(*) FROM INFORMATION_SCHEMA.table_constraints WHERE constraint_schema = 'noso' AND table_name = 't_order_payment_item' AND constraint_name = 'fk_t_order_payment_items'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:220
+[0.195ms] [rows:1] UPDATE `t_order` SET `sn`='20250407000048',`updated_at`='2025-04-07 12:26:36.368' WHERE `t_order`.`deleted_at` IS NULL AND `id` = 48
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:200
+[0.735ms] [rows:1] INSERT INTO `t_order` (`created_at`,`updated_at`,`deleted_at`,`user_id`,`sn`,`date`,`totalamt`,`payamt`,`totalqty`,`memo`,`pics`,`status`,`orderpayment_id`) VALUES ('2025-04-07 12:26:36.368','2025-04-07 12:26:36.368',NULL,NULL,'','2022-01-01',100,0,10,'','','created',NULL)
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:206
+[0.269ms] [rows:1] INSERT INTO `t_order_item` (`created_at`,`updated_at`,`deleted_at`,`order_id`,`bean_id`,`bean_name`,`qty`,`price`,`amt`) VALUES ('2025-04-07 12:26:36.369','2025-04-07 12:26:36.369',NULL,48,1,'Test Bean',5,10,50)
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:107
+[0.326ms] [rows:1] SELECT count(*) FROM `t_order` WHERE status = 'created' AND date like '%2022-01-01%' AND `t_order`.`deleted_at` IS NULL
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:111
+[0.305ms] [rows:1] SELECT * FROM `t_order_item` WHERE `t_order_item`.`order_id` = 48 AND `t_order_item`.`deleted_at` IS NULL
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:111
+[0.660ms] [rows:1] SELECT * FROM `t_order` WHERE status = 'created' AND date like '%2022-01-01%' AND `t_order`.`deleted_at` IS NULL ORDER BY id desc LIMIT 1
+    order_test.go:73: 
+        	Error Trace:	/Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:73
+        	Error:      	Not equal: 
+        	            	expected: 1
+        	            	actual  : 6
+        	Test:       	TestSearch
+--- FAIL: TestSearch (0.02s)
+=== RUN   TestPlace
+2025/04/07 12:26:36 xxxxxxxxxxxxdbConfig map[driver:mysql dsn:root:root@tcp(127.0.0.1:3306)/noso?parseTime=true]
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.094ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.538ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.266ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'noso' AND table_name = 't_order' AND table_type = 'BASE TABLE'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.109ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.396ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.206ms] [rows:-] SELECT * FROM `t_order` LIMIT 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.315ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'noso' AND table_name = 't_order' ORDER BY ORDINAL_POSITION
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.063ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.267ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.178ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'noso' AND table_name = 't_order_item' AND table_type = 'BASE TABLE'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.048ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.249ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.186ms] [rows:-] SELECT * FROM `t_order_item` LIMIT 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.252ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'noso' AND table_name = 't_order_item' ORDER BY ORDINAL_POSITION
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.063ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.253ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.437ms] [rows:-] SELECT count(*) FROM INFORMATION_SCHEMA.table_constraints WHERE constraint_schema = 'noso' AND table_name = 't_order_item' AND constraint_name = 'fk_t_order_order_items'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.062ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.285ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.180ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'noso' AND table_name = 't_order_payment' AND table_type = 'BASE TABLE'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.065ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.280ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.182ms] [rows:-] SELECT * FROM `t_order_payment` LIMIT 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.293ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'noso' AND table_name = 't_order_payment' ORDER BY ORDINAL_POSITION
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.054ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.283ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.165ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'noso' AND table_name = 't_order_payment_item' AND table_type = 'BASE TABLE'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.046ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.250ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.184ms] [rows:-] SELECT * FROM `t_order_payment_item` LIMIT 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.271ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'noso' AND table_name = 't_order_payment_item' ORDER BY ORDINAL_POSITION
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.058ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.284ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.455ms] [rows:-] SELECT count(*) FROM INFORMATION_SCHEMA.table_constraints WHERE constraint_schema = 'noso' AND table_name = 't_order_payment_item' AND constraint_name = 'fk_t_order_payment_items'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:220
+[0.204ms] [rows:1] UPDATE `t_order` SET `sn`='20250407000049',`updated_at`='2025-04-07 12:26:36.382' WHERE `t_order`.`deleted_at` IS NULL AND `id` = 49
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:200
+[0.873ms] [rows:1] INSERT INTO `t_order` (`created_at`,`updated_at`,`deleted_at`,`user_id`,`sn`,`date`,`totalamt`,`payamt`,`totalqty`,`memo`,`pics`,`status`,`orderpayment_id`) VALUES ('2025-04-07 12:26:36.382','2025-04-07 12:26:36.382',NULL,NULL,'','2022-01-01',80,0,10,'','','created',NULL)
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:206
+[0.272ms] [rows:1] INSERT INTO `t_order_item` (`created_at`,`updated_at`,`deleted_at`,`order_id`,`bean_id`,`bean_name`,`qty`,`price`,`amt`) VALUES ('2025-04-07 12:26:36.383','2025-04-07 12:26:36.383',NULL,49,1,'Test Bean',8,10,80)
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:256
+[0.508ms] [rows:1] INSERT INTO `t_order_payment` (`created_at`,`updated_at`,`deleted_at`,`order_id`,`status`) VALUES ('2025-04-07 12:26:36.384','2025-04-07 12:26:36.384',NULL,49,'')
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:262
+[0.458ms] [rows:1] INSERT INTO `t_order_payment_item` (`created_at`,`updated_at`,`deleted_at`,`order_id`,`orderpayment_id`,`type`,`amt`,`qty`,`memo`,`ids`,`status`) VALUES ('2025-04-07 12:26:36.384','2025-04-07 12:26:36.384',NULL,0,25,'cash',50,0,'','','')
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:262
+[0.347ms] [rows:1] INSERT INTO `t_order_payment_item` (`created_at`,`updated_at`,`deleted_at`,`order_id`,`orderpayment_id`,`type`,`amt`,`qty`,`memo`,`ids`,`status`) VALUES ('2025-04-07 12:26:36.385','2025-04-07 12:26:36.385',NULL,0,25,'shopaccount',30,0,'','','')
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:271
+[0.488ms] [rows:1] UPDATE `t_order` SET `created_at`='2025-04-07 12:26:36.382',`updated_at`='2025-04-07 12:26:36.385',`deleted_at`=NULL,`user_id`=NULL,`sn`='20250407000049',`date`='2022-01-01',`totalamt`=80,`payamt`=0,`totalqty`=10,`memo`='',`pics`='',`status`='placed',`orderpayment_id`=25 WHERE `t_order`.`deleted_at` IS NULL AND `id` = 49
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_payment.go:53
+[0.277ms] [rows:2] SELECT * FROM `t_order_payment_item` WHERE orderpayment_id = 25 AND `t_order_payment_item`.`deleted_at` IS NULL
+2025/04/07 12:26:36 开始结算订单 49
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:306
+[0.487ms] [rows:1] UPDATE `t_order` SET `created_at`='2025-04-07 12:26:36.382',`updated_at`='2025-04-07 12:26:36.387',`deleted_at`=NULL,`user_id`=NULL,`sn`='20250407000049',`date`='2022-01-01',`totalamt`=80,`payamt`=0,`totalqty`=10,`memo`='',`pics`='',`status`='settled',`orderpayment_id`=25 WHERE `t_order`.`deleted_at` IS NULL AND `id` = 49
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_payment.go:43
+[0.230ms] [rows:1] SELECT * FROM `t_order_payment` WHERE id = 25 AND `t_order_payment`.`deleted_at` IS NULL ORDER BY `t_order_payment`.`id` LIMIT 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:332
+[0.421ms] [rows:1] UPDATE `t_order_payment` SET `created_at`='2025-04-07 12:26:36',`updated_at`='2025-04-07 12:26:36.388',`deleted_at`=NULL,`order_id`=49,`status`='settled' WHERE `t_order_payment`.`deleted_at` IS NULL AND `id` = 25
+--- PASS: TestPlace (0.02s)
+=== RUN   TestSettle
+2025/04/07 12:26:36 xxxxxxxxxxxxdbConfig map[driver:mysql dsn:root:root@tcp(127.0.0.1:3306)/noso?parseTime=true]
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.069ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.323ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.175ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'noso' AND table_name = 't_order' AND table_type = 'BASE TABLE'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.054ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.279ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.202ms] [rows:-] SELECT * FROM `t_order` LIMIT 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.518ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'noso' AND table_name = 't_order' ORDER BY ORDINAL_POSITION
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.059ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.262ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.176ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'noso' AND table_name = 't_order_item' AND table_type = 'BASE TABLE'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.053ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.244ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.184ms] [rows:-] SELECT * FROM `t_order_item` LIMIT 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.256ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'noso' AND table_name = 't_order_item' ORDER BY ORDINAL_POSITION
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.065ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.257ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.485ms] [rows:-] SELECT count(*) FROM INFORMATION_SCHEMA.table_constraints WHERE constraint_schema = 'noso' AND table_name = 't_order_item' AND constraint_name = 'fk_t_order_order_items'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.060ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.287ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.177ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'noso' AND table_name = 't_order_payment' AND table_type = 'BASE TABLE'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.064ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.315ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.180ms] [rows:-] SELECT * FROM `t_order_payment` LIMIT 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.253ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'noso' AND table_name = 't_order_payment' ORDER BY ORDINAL_POSITION
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.051ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.251ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.156ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'noso' AND table_name = 't_order_payment_item' AND table_type = 'BASE TABLE'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.043ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.269ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.169ms] [rows:-] SELECT * FROM `t_order_payment_item` LIMIT 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.385ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'noso' AND table_name = 't_order_payment_item' ORDER BY ORDINAL_POSITION
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.071ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.264ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.412ms] [rows:-] SELECT count(*) FROM INFORMATION_SCHEMA.table_constraints WHERE constraint_schema = 'noso' AND table_name = 't_order_payment_item' AND constraint_name = 'fk_t_order_payment_items'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:220
+[0.179ms] [rows:1] UPDATE `t_order` SET `sn`='20250407000050',`updated_at`='2025-04-07 12:26:36.398' WHERE `t_order`.`deleted_at` IS NULL AND `id` = 50
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:200
+[0.462ms] [rows:1] INSERT INTO `t_order` (`created_at`,`updated_at`,`deleted_at`,`user_id`,`sn`,`date`,`totalamt`,`payamt`,`totalqty`,`memo`,`pics`,`status`,`orderpayment_id`) VALUES ('2025-04-07 12:26:36.398','2025-04-07 12:26:36.398',NULL,NULL,'','2022-01-01',80,0,10,'','','created',NULL)
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:206
+[0.162ms] [rows:1] INSERT INTO `t_order_item` (`created_at`,`updated_at`,`deleted_at`,`order_id`,`bean_id`,`bean_name`,`qty`,`price`,`amt`) VALUES ('2025-04-07 12:26:36.398','2025-04-07 12:26:36.398',NULL,50,1,'Test Bean',8,10,80)
+2025/04/07 12:26:36 开始结算订单 50
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:306
+[0.400ms] [rows:1] UPDATE `t_order` SET `created_at`='2025-04-07 12:26:36.398',`updated_at`='2025-04-07 12:26:36.399',`deleted_at`=NULL,`user_id`=NULL,`sn`='20250407000050',`date`='2022-01-01',`totalamt`=80,`payamt`=0,`totalqty`=10,`memo`='',`pics`='',`status`='settled',`orderpayment_id`=NULL WHERE `t_order`.`deleted_at` IS NULL AND `id` = 50
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:256
+[0.416ms] [rows:1] INSERT INTO `t_order_payment` (`created_at`,`updated_at`,`deleted_at`,`order_id`,`status`) VALUES ('2025-04-07 12:26:36.4','2025-04-07 12:26:36.4',NULL,50,'')
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:262
+[0.551ms] [rows:1] INSERT INTO `t_order_payment_item` (`created_at`,`updated_at`,`deleted_at`,`order_id`,`orderpayment_id`,`type`,`amt`,`qty`,`memo`,`ids`,`status`) VALUES ('2025-04-07 12:26:36.4','2025-04-07 12:26:36.4',NULL,0,26,'cash',50,0,'','','')
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:262
+[0.671ms] [rows:1] INSERT INTO `t_order_payment_item` (`created_at`,`updated_at`,`deleted_at`,`order_id`,`orderpayment_id`,`type`,`amt`,`qty`,`memo`,`ids`,`status`) VALUES ('2025-04-07 12:26:36.401','2025-04-07 12:26:36.401',NULL,0,26,'shopaccount',50,0,'','','')
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:271
+[0.394ms] [rows:1] UPDATE `t_order` SET `created_at`='2025-04-07 12:26:36.398',`updated_at`='2025-04-07 12:26:36.402',`deleted_at`=NULL,`user_id`=NULL,`sn`='20250407000050',`date`='2022-01-01',`totalamt`=80,`payamt`=-20,`totalqty`=10,`memo`='',`pics`='',`status`='placed',`orderpayment_id`=26 WHERE `t_order`.`deleted_at` IS NULL AND `id` = 50
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:332
+[0.395ms] [rows:1] UPDATE `t_order_payment` SET `created_at`='2025-04-07 12:26:36.4',`updated_at`='2025-04-07 12:26:36.402',`deleted_at`=NULL,`order_id`=50,`status`='settled' WHERE `t_order_payment`.`deleted_at` IS NULL AND `id` = 26
+    order_test.go:140: 
+        	Error Trace:	/Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:140
+        	Error:      	Not equal: 
+        	            	expected: "settled"
+        	            	actual  : "placed"
+        	            	
+        	            	Diff:
+        	            	--- Expected
+        	            	+++ Actual
+        	            	@@ -1,2 +1,2 @@
+        	            	-(order.OrderStatus) (len=7) "settled"
+        	            	+(order.OrderStatus) (len=6) "placed"
+        	            	 
+        	Test:       	TestSettle
+    order_test.go:141: 
+        	Error Trace:	/Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:141
+        	Error:      	Not equal: 
+        	            	expected: "settled"
+        	            	actual  : "placed"
+        	            	
+        	            	Diff:
+        	            	--- Expected
+        	            	+++ Actual
+        	            	@@ -1,2 +1,2 @@
+        	            	-(order.OrderStatus) (len=7) "settled"
+        	            	+(order.OrderStatus) (len=6) "placed"
+        	            	 
+        	Test:       	TestSettle
+--- FAIL: TestSettle (0.01s)
+=== RUN   TestGetPriceLevelDiscount
+2025/04/07 12:26:36 xxxxxxxxxxxxdbConfig map[driver:mysql dsn:root:root@tcp(127.0.0.1:3306)/noso?parseTime=true]
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.082ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.387ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.218ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'noso' AND table_name = 't_order' AND table_type = 'BASE TABLE'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.074ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.412ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.249ms] [rows:-] SELECT * FROM `t_order` LIMIT 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.404ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'noso' AND table_name = 't_order' ORDER BY ORDINAL_POSITION
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.063ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.335ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.344ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'noso' AND table_name = 't_order_item' AND table_type = 'BASE TABLE'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.049ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.287ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.118ms] [rows:-] SELECT * FROM `t_order_item` LIMIT 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.255ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'noso' AND table_name = 't_order_item' ORDER BY ORDINAL_POSITION
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.056ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.259ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.363ms] [rows:-] SELECT count(*) FROM INFORMATION_SCHEMA.table_constraints WHERE constraint_schema = 'noso' AND table_name = 't_order_item' AND constraint_name = 'fk_t_order_order_items'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.046ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.229ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.129ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'noso' AND table_name = 't_order_payment' AND table_type = 'BASE TABLE'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.045ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.240ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.124ms] [rows:-] SELECT * FROM `t_order_payment` LIMIT 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.238ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'noso' AND table_name = 't_order_payment' ORDER BY ORDINAL_POSITION
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.051ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.234ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.128ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'noso' AND table_name = 't_order_payment_item' AND table_type = 'BASE TABLE'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.042ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.226ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.136ms] [rows:-] SELECT * FROM `t_order_payment_item` LIMIT 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.239ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'noso' AND table_name = 't_order_payment_item' ORDER BY ORDINAL_POSITION
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.051ms] [rows:-] SELECT DATABASE()
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.253ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'noso%' ORDER BY SCHEMA_NAME='noso' DESC,SCHEMA_NAME limit 1
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:22
+[0.374ms] [rows:-] SELECT count(*) FROM INFORMATION_SCHEMA.table_constraints WHERE constraint_schema = 'noso' AND table_name = 't_order_payment_item' AND constraint_name = 'fk_t_order_payment_items'
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:220
+[0.135ms] [rows:1] UPDATE `t_order` SET `sn`='20250407000051',`updated_at`='2025-04-07 04:26:36.411' WHERE `t_order`.`deleted_at` IS NULL AND `id` = 51
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order_test.go:152
+[0.448ms] [rows:1] INSERT INTO `t_order` (`created_at`,`updated_at`,`deleted_at`,`user_id`,`sn`,`date`,`totalamt`,`payamt`,`totalqty`,`memo`,`pics`,`status`,`orderpayment_id`) VALUES ('2025-04-07 04:26:36.411','2025-04-07 04:26:36.411',NULL,NULL,'TEST123','',100,0,0,'','','',NULL)
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:357
+[0.247ms] [rows:0] SELECT * FROM `t_order_item` WHERE order_id = 51 AND `t_order_item`.`deleted_at` IS NULL
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/bean/bean.go:208
+[0.299ms] [rows:0] SELECT * FROM `t_price` WHERE bean_id IN (NULL) AND `pricelevel_id` = 1 AND `t_price`.`deleted_at` IS NULL
+--- PASS: TestGetPriceLevelDiscount (0.01s)
+FAIL
+FAIL	hahacking/models/order	1.114s
+=== RUN   TestCreate
+2025/04/07 12:26:36 xxxxxxxxxxxxdbConfig map[driver:mysql dsn:root:root@tcp(127.0.0.1:3306)/noso?parseTime=true]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:220
+[0.681ms] [rows:1] UPDATE `t_order` SET `sn`='20250407000052',`updated_at`='2025-04-07 12:26:36.64' WHERE `t_order`.`deleted_at` IS NULL AND `id` = 52
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:200
+[1.696ms] [rows:1] INSERT INTO `t_order` (`created_at`,`updated_at`,`deleted_at`,`user_id`,`sn`,`date`,`totalamt`,`payamt`,`totalqty`,`memo`,`pics`,`status`,`orderpayment_id`) VALUES ('2025-04-07 12:26:36.639','2025-04-07 12:26:36.639',NULL,NULL,'','',20,0,0,'','','created',NULL)
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:206
+[0.421ms] [rows:1] INSERT INTO `t_order_item` (`created_at`,`updated_at`,`deleted_at`,`order_id`,`bean_id`,`bean_name`,`qty`,`price`,`amt`) VALUES ('2025-04-07 12:26:36.641','2025-04-07 12:26:36.641',NULL,52,1,'',1,0,12)
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/order/order.go:206
+[0.347ms] [rows:1] INSERT INTO `t_order_item` (`created_at`,`updated_at`,`deleted_at`,`order_id`,`bean_id`,`bean_name`,`qty`,`price`,`amt`) VALUES ('2025-04-07 12:26:36.641','2025-04-07 12:26:36.641',NULL,52,8,'',3,0,8)
+--- PASS: TestCreate (0.01s)
+=== RUN   TestPlace
+/var/folders/1w/fm0bjyts2kn95_9fdmr_y2800000gn/T/go-build2882673236/b431/order.test flag redefined: env
+--- FAIL: TestPlace (0.00s)
+panic: /var/folders/1w/fm0bjyts2kn95_9fdmr_y2800000gn/T/go-build2882673236/b431/order.test flag redefined: env [recovered]
+	panic: /var/folders/1w/fm0bjyts2kn95_9fdmr_y2800000gn/T/go-build2882673236/b431/order.test flag redefined: env
+
+goroutine 32 [running]:
+testing.tRunner.func1.2({0x104e31be0, 0x140000be8b0})
+	/usr/local/go/src/testing/testing.go:1632 +0x1bc
+testing.tRunner.func1()
+	/usr/local/go/src/testing/testing.go:1635 +0x334
+panic({0x104e31be0?, 0x140000be8b0?})
+	/usr/local/go/src/runtime/panic.go:785 +0x124
+flag.(*FlagSet).Var(0x14000158150, {0x104f47c98, 0x140000be870}, {0x104c81d43, 0x3}, {0x0, 0x0})
+	/usr/local/go/src/flag/flag.go:1028 +0x2d4
+flag.(*FlagSet).StringVar(...)
+	/usr/local/go/src/flag/flag.go:879
+flag.(*FlagSet).String(0x14000158150, {0x104c81d43, 0x3}, {0x104c81d46, 0x3}, {0x0, 0x0})
+	/usr/local/go/src/flag/flag.go:892 +0x98
+flag.String(...)
+	/usr/local/go/src/flag/flag.go:899
+hahacking/config.Setup({0x104c8805c, 0x6})
+	/Users/derekzhangv/Develop/sites/noso/api-go/config/config.go:37 +0x54
+hahacking/routers/order.Init()
+	/Users/derekzhangv/Develop/sites/noso/api-go/routers/order/order_test.go:18 +0x28
+hahacking/routers/order.TestPlace(0x140001a01a0)
+	/Users/derekzhangv/Develop/sites/noso/api-go/routers/order/order_test.go:37 +0x28
+testing.tRunner(0x140001a01a0, 0x104f3ef48)
+	/usr/local/go/src/testing/testing.go:1690 +0xe4
+created by testing.(*T).Run in goroutine 1
+	/usr/local/go/src/testing/testing.go:1743 +0x314
+FAIL	hahacking/routers/order	0.692s
+=== RUN   TestStart
+2025/04/07 12:26:36 xxxxxxxxxxxxdbConfig map[driver:mysql dsn:root:root@tcp(127.0.0.1:3306)/noso?parseTime=true]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+
+2025/04/07 12:26:36 /Users/derekzhangv/Develop/sites/noso/api-go/models/roast/roast.go:155
+[7.093ms] [rows:1] INSERT INTO `t_roast` (`created_at`,`updated_at`,`deleted_at`,`name`,`date`,`inqty`,`outqty`,`bean_id`,`status`,`starttime`,`completetime`,`canceltime`) VALUES ('2025-04-07 12:26:36.93','2025-04-07 12:26:36.93',NULL,'test roast','',0,0,1,'start','2025-04-07 12:26','','')
+--- FAIL: TestStart (0.01s)
+panic: interface conversion: interface {} is nil, not float64 [recovered]
+	panic: interface conversion: interface {} is nil, not float64
+
+goroutine 8 [running]:
+testing.tRunner.func1.2({0x104bbd560, 0x14000593c50})
+	/usr/local/go/src/testing/testing.go:1632 +0x1bc
+testing.tRunner.func1()
+	/usr/local/go/src/testing/testing.go:1635 +0x334
+panic({0x104bbd560?, 0x14000593c50?})
+	/usr/local/go/src/runtime/panic.go:785 +0x124
+hahacking/models/roast.Start({{0x0, 0x0}, {0x14000010b36, 0xa}, 0x1, 0x0, {0x140004a5e60, 0x2, 0x2}})
+	/Users/derekzhangv/Develop/sites/noso/api-go/models/roast/roast.go:165 +0x2fc
+hahacking/routers/roast.Start(0x1400015e500)
+	/Users/derekzhangv/Develop/sites/noso/api-go/routers/roast/roast.go:73 +0xb4
+hahacking/routers/roast.TestStart(0x14000116680)
+	/Users/derekzhangv/Develop/sites/noso/api-go/routers/roast/roast_test.go:32 +0x144
+testing.tRunner(0x14000116680, 0x104c85560)
+	/usr/local/go/src/testing/testing.go:1690 +0xe4
+created by testing.(*T).Run in goroutine 1
+	/usr/local/go/src/testing/testing.go:1743 +0x314
+FAIL	hahacking/routers/roast	0.985s
+FAIL

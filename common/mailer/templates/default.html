@@ -1,0 +1,15 @@
+<h2>你好</h2>
+
+<div>
+	{{ .Content }}
+</div>
+{{if .URL}}
+<div style="text-align: center;">
+	<a href="{{ .URL }}" style="padding:12px 20px; background:#1a73e8; color:white;
+   border-radius:6px; text-decoration:none; display:inline-block;">
+		点击查看
+	</a>
+</div>
+{{end}}
+
+<img src="cid:logo" width="100%">

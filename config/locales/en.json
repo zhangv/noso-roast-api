@@ -1,0 +1,9 @@
+{
+	"auth": {
+		"nickname_required": "Please fill in the nickname"
+	},
+	"goodbye": {
+		"id": "goodbye",
+		"translation": "Goodbye"
+	}
+}

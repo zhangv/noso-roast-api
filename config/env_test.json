@@ -1,0 +1,58 @@
+{
+	"server": {
+		"mode": "test",
+		"port": 8000
+	},
+	"db1": {
+		"driver": "sqlite",
+		"dsn": "file::memory:?cache=shared"
+	},
+	"db00": {
+		"driver": "sqlite",
+		"dsn": ":memory:"
+	},
+	"db": {
+		"driver": "mysql",
+		"host": "127.0.0.1",
+		"port": "3306",
+		"user": "root",
+		"password": "root",
+		"database": "noso"
+	},
+	"redis": {
+		"host": "127.0.0.1",
+		"port": "6379",
+		"password": "",
+		"db": 0
+	},
+	"sendcloud": {
+		"api_user": "notifier",
+		"api_key": "GlXCg7UYQD2iznKU"
+	},
+	"smtp": {
+		"cs": {
+			"Host": "smtp.exmail.qq.com",
+			"Port": 465,
+			"_comment1": "配合端口465ssl使用（qq企业邮箱）- 不work",
+			"SMTPSecure": "ssl",
+			"SMTPAuth": true,
+			"Timeout": "40",
+			"Username": "cs@weordos.com",
+			"_comment2": "不是邮箱登录密码，而是授权码",
+			"Password": "mNnusGnjeAR6tZQU",
+			"from": "cs@weordos.com",
+			"fromName": "客服"
+		},
+		"notify": {
+			"Host": "smtp.exmail.qq.com",
+			"Port": 465,
+			"SMTPSecure": "ssl",
+			"SMTPAuth": true,
+			"Timeout": "40",
+			"Username": "cs@weordos.com",
+			"Password": "mNnusGnjeAR6tZQU",
+			"from": "cs@weordos.com",
+			"fromName": "通知"
+		}
+	}
+}

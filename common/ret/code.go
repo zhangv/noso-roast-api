@@ -1,0 +1,13 @@
+package ret
+
+const (
+	SUCCESS        = 0
+	ERROR          = 1000
+	INVALID_PARAMS = 400
+	TOKEN_INVALID  = 401
+
+	ERROR_AUTH_CHECK_TOKEN_FAIL    = 10001
+	ERROR_AUTH_CHECK_TOKEN_TIMEOUT = 10002
+	ERROR_AUTH_TOKEN               = 10003
+	ERROR_AUTH                     = 10004
+)

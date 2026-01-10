@@ -1,0 +1,14 @@
+{
+	"auth": {
+		"required": "请填写{0}",
+		"invalid": "{field}格式不正确",
+		"nickname": "昵称",
+		"password": "密码",
+		"passwordconfirm": "确认密码",
+		"email": "电子邮箱"
+	},
+	"goodbye": {
+		"id": "goodbye",
+		"translation": "再见"
+	}
+}

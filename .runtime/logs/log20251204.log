@@ -1,0 +1,175 @@
+2025/12/04 10:44:45 日志系统初始化完成，文件路径： .runtime/logs/log20251204.log 日志级别： DEBUG
+2025/12/04 10:44:45 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/04 10:44:45 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/04 10:44:45 自动日志轮转已启动
+[INFO][main.go:56]2025/12/04 10:44:45 logger setup env: dev
+[INFO][logger.go:44]2025/12/04 10:59:38 [GIN]  | 204  |       3.083µs |             ::1 |  OPTIONS  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 10:59:38 [GIN]  | 200  |   66.330791ms |             ::1 |  GET  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 11:01:36 [GIN]  | 204  |       7.458µs |             ::1 |  OPTIONS  /bean/17
+[INFO][logger.go:44]2025/12/04 11:01:36 [GIN]  | 200  |    1.611417ms |             ::1 |  GET  /bean/17
+[INFO][logger.go:44]2025/12/04 11:01:36 [GIN]  | 204  |       7.584µs |             ::1 |  OPTIONS  /cupping/sample?bean_id=17&preloads=scores
+[INFO][logger.go:44]2025/12/04 11:01:36 [GIN]  | 200  |    5.050084ms |             ::1 |  GET  /cupping/sample?bean_id=17&preloads=scores
+[INFO][logger.go:44]2025/12/04 11:01:56 [GIN]  | 204  |        3.75µs |             ::1 |  OPTIONS  /bean/17
+[INFO][logger.go:44]2025/12/04 11:01:56 [GIN]  | 200  |     880.167µs |             ::1 |  GET  /bean/17
+[INFO][logger.go:44]2025/12/04 11:01:56 [GIN]  | 204  |      20.791µs |             ::1 |  OPTIONS  /cupping/sample?bean_id=17&preloads=scores
+[INFO][logger.go:44]2025/12/04 11:01:56 [GIN]  | 200  |    3.729375ms |             ::1 |  GET  /cupping/sample?bean_id=17&preloads=scores
+2025/12/04 11:41:11 日志系统初始化完成，文件路径： .runtime/logs/log20251204.log 日志级别： DEBUG
+2025/12/04 11:41:11 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/04 11:41:11 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/04 11:41:11 自动日志轮转已启动
+[INFO][main.go:56]2025/12/04 11:41:11 logger setup env: dev
+2025/12/04 11:41:47 日志系统初始化完成，文件路径： .runtime/logs/log20251204.log 日志级别： DEBUG
+2025/12/04 11:41:47 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/04 11:41:47 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/04 11:41:47 自动日志轮转已启动
+[INFO][main.go:56]2025/12/04 11:41:47 logger setup env: dev
+[INFO][logger.go:44]2025/12/04 11:42:20 [GIN]  | 204  |      14.292µs |             ::1 |  OPTIONS  /bean/17
+[INFO][logger.go:44]2025/12/04 11:42:20 [GIN]  | 200  |    1.511666ms |             ::1 |  GET  /bean/17
+[INFO][logger.go:44]2025/12/04 11:42:20 [GIN]  | 204  |       3.417µs |             ::1 |  OPTIONS  /cupping/score/bean/17
+[INFO][logger.go:44]2025/12/04 11:42:20 [GIN]  | 404  |        23.5µs |             ::1 |  GET  /cupping/score/bean/17
+[INFO][logger.go:44]2025/12/04 11:42:44 [GIN]  | 404  |      49.583µs |             ::1 |  GET  /cupping/score/bean/17
+[INFO][logger.go:44]2025/12/04 11:42:45 [GIN]  | 404  |       25.75µs |             ::1 |  GET  /favicon.ico
+[INFO][logger.go:44]2025/12/04 11:44:16 [GIN]  | 204  |       4.083µs |             ::1 |  OPTIONS  /bean/17
+[INFO][logger.go:44]2025/12/04 11:44:16 [GIN]  | 204  |      10.125µs |             ::1 |  OPTIONS  /bean/17
+[INFO][logger.go:44]2025/12/04 11:44:16 [GIN]  | 200  |    1.105375ms |             ::1 |  GET  /bean/17
+[INFO][logger.go:44]2025/12/04 11:44:16 [GIN]  | 200  |    2.338875ms |             ::1 |  GET  /bean/17
+[INFO][logger.go:44]2025/12/04 11:44:16 [GIN]  | 204  |       3.416µs |             ::1 |  OPTIONS  /cupping/score/bean/17
+[INFO][logger.go:44]2025/12/04 11:44:16 [GIN]  | 404  |      49.875µs |             ::1 |  GET  /cupping/score/bean/17
+[INFO][logger.go:44]2025/12/04 11:44:16 [GIN]  | 204  |        25.5µs |             ::1 |  OPTIONS  /cupping/score/bean/17
+[INFO][logger.go:44]2025/12/04 11:44:16 [GIN]  | 404  |        29.5µs |             ::1 |  GET  /cupping/score/bean/17
+[INFO][logger.go:44]2025/12/04 11:44:22 [GIN]  | 204  |       4.625µs |             ::1 |  OPTIONS  /bean/17
+[INFO][logger.go:44]2025/12/04 11:44:22 [GIN]  | 200  |     920.958µs |             ::1 |  GET  /bean/17
+[INFO][logger.go:44]2025/12/04 11:44:22 [GIN]  | 204  |       4.208µs |             ::1 |  OPTIONS  /cupping/score/bean/17
+[INFO][logger.go:44]2025/12/04 11:44:22 [GIN]  | 404  |      23.542µs |             ::1 |  GET  /cupping/score/bean/17
+2025/12/04 11:45:44 日志系统初始化完成，文件路径： .runtime/logs/log20251204.log 日志级别： DEBUG
+2025/12/04 11:45:44 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/04 11:45:44 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/04 11:45:44 自动日志轮转已启动
+[INFO][main.go:56]2025/12/04 11:45:44 logger setup env: dev
+2025/12/04 11:45:59 日志系统初始化完成，文件路径： .runtime/logs/log20251204.log 日志级别： DEBUG
+2025/12/04 11:45:59 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/04 11:45:59 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/04 11:45:59 自动日志轮转已启动
+[INFO][main.go:56]2025/12/04 11:45:59 logger setup env: dev
+[INFO][logger.go:44]2025/12/04 11:46:04 [GIN]  | 204  |       3.166µs |             ::1 |  OPTIONS  /bean/17
+[INFO][logger.go:44]2025/12/04 11:46:04 [GIN]  | 200  |    1.388791ms |             ::1 |  GET  /bean/17
+[INFO][logger.go:44]2025/12/04 11:46:04 [GIN]  | 204  |           4µs |             ::1 |  OPTIONS  /cupping/score/bean/17
+[INFO][logger.go:44]2025/12/04 11:46:04 [GIN]  | 200  |    3.430875ms |             ::1 |  GET  /cupping/score/bean/17
+2025/12/04 11:51:24 日志系统初始化完成，文件路径： .runtime/logs/log20251204.log 日志级别： DEBUG
+2025/12/04 11:51:24 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/04 11:51:24 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/04 11:51:24 自动日志轮转已启动
+[INFO][main.go:56]2025/12/04 11:51:24 logger setup env: dev
+[INFO][logger.go:44]2025/12/04 11:51:33 [GIN]  | 204  |         7.5µs |             ::1 |  OPTIONS  /bean/17
+[INFO][logger.go:44]2025/12/04 11:51:33 [GIN]  | 200  |    1.416792ms |             ::1 |  GET  /bean/17
+[INFO][logger.go:44]2025/12/04 11:51:33 [GIN]  | 204  |       4.333µs |             ::1 |  OPTIONS  /cupping/score/bean/17
+[INFO][logger.go:44]2025/12/04 11:51:33 [GIN]  | 200  |    1.234125ms |             ::1 |  GET  /cupping/score/bean/17
+2025/12/04 11:53:15 日志系统初始化完成，文件路径： .runtime/logs/log20251204.log 日志级别： DEBUG
+2025/12/04 11:53:15 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/04 11:53:15 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/04 11:53:15 自动日志轮转已启动
+[INFO][main.go:56]2025/12/04 11:53:15 logger setup env: dev
+2025/12/04 11:53:31 日志系统初始化完成，文件路径： .runtime/logs/log20251204.log 日志级别： DEBUG
+2025/12/04 11:53:31 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/04 11:53:31 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/04 11:53:31 自动日志轮转已启动
+[INFO][main.go:56]2025/12/04 11:53:31 logger setup env: dev
+[INFO][logger.go:44]2025/12/04 11:54:03 [GIN]  | 204  |        4.75µs |             ::1 |  OPTIONS  /bean/17
+[INFO][logger.go:44]2025/12/04 11:54:03 [GIN]  | 200  |    1.897917ms |             ::1 |  GET  /bean/17
+[INFO][logger.go:44]2025/12/04 11:54:03 [GIN]  | 204  |       5.125µs |             ::1 |  OPTIONS  /cupping/score/bean/17
+[INFO][logger.go:44]2025/12/04 11:54:03 [GIN]  | 200  |    2.285583ms |             ::1 |  GET  /cupping/score/bean/17
+[INFO][logger.go:44]2025/12/04 11:55:04 [GIN]  | 204  |       3.459µs |             ::1 |  OPTIONS  /bean/17
+[INFO][logger.go:44]2025/12/04 11:55:04 [GIN]  | 200  |     876.459µs |             ::1 |  GET  /bean/17
+[INFO][logger.go:44]2025/12/04 11:55:04 [GIN]  | 204  |       7.167µs |             ::1 |  OPTIONS  /cupping/score/bean/17
+[INFO][logger.go:44]2025/12/04 11:55:04 [GIN]  | 200  |     750.875µs |             ::1 |  GET  /cupping/score/bean/17
+[INFO][logger.go:44]2025/12/04 11:55:54 [GIN]  | 204  |       9.833µs |             ::1 |  OPTIONS  /bean/17
+[INFO][logger.go:44]2025/12/04 11:55:54 [GIN]  | 200  |    1.012209ms |             ::1 |  GET  /bean/17
+[INFO][logger.go:44]2025/12/04 11:55:54 [GIN]  | 204  |       3.708µs |             ::1 |  OPTIONS  /cupping/score/bean/17
+[INFO][logger.go:44]2025/12/04 11:55:54 [GIN]  | 200  |     810.959µs |             ::1 |  GET  /cupping/score/bean/17
+[INFO][logger.go:44]2025/12/04 11:58:31 [GIN]  | 204  |       4.583µs |             ::1 |  OPTIONS  /bean/17
+[INFO][logger.go:44]2025/12/04 11:58:31 [GIN]  | 200  |     897.459µs |             ::1 |  GET  /bean/17
+[INFO][logger.go:44]2025/12/04 11:58:32 [GIN]  | 204  |       4.417µs |             ::1 |  OPTIONS  /cupping/score/bean/17
+[INFO][logger.go:44]2025/12/04 11:58:32 [GIN]  | 200  |    1.313958ms |             ::1 |  GET  /cupping/score/bean/17
+[INFO][logger.go:44]2025/12/04 11:59:40 [GIN]  | 204  |       4.083µs |             ::1 |  OPTIONS  /bean/17
+[INFO][logger.go:44]2025/12/04 11:59:40 [GIN]  | 200  |    1.034291ms |             ::1 |  GET  /bean/17
+[INFO][logger.go:44]2025/12/04 11:59:40 [GIN]  | 204  |       5.375µs |             ::1 |  OPTIONS  /cupping/score/bean/17
+[INFO][logger.go:44]2025/12/04 11:59:40 [GIN]  | 200  |    1.137209ms |             ::1 |  GET  /cupping/score/bean/17
+[INFO][logger.go:44]2025/12/04 12:00:11 [GIN]  | 204  |       7.875µs |             ::1 |  OPTIONS  /bean/17
+[INFO][logger.go:44]2025/12/04 12:00:11 [GIN]  | 200  |    2.024167ms |             ::1 |  GET  /bean/17
+[INFO][logger.go:44]2025/12/04 12:00:11 [GIN]  | 204  |        3.75µs |             ::1 |  OPTIONS  /cupping/score/bean/17
+[INFO][logger.go:44]2025/12/04 12:00:11 [GIN]  | 200  |    3.556375ms |             ::1 |  GET  /cupping/score/bean/17
+[INFO][logger.go:44]2025/12/04 12:00:37 [GIN]  | 204  |       3.959µs |             ::1 |  OPTIONS  /bean/17
+[INFO][logger.go:44]2025/12/04 12:00:37 [GIN]  | 200  |      858.25µs |             ::1 |  GET  /bean/17
+[INFO][logger.go:44]2025/12/04 12:00:37 [GIN]  | 204  |       4.375µs |             ::1 |  OPTIONS  /cupping/score/bean/17
+[INFO][logger.go:44]2025/12/04 12:00:37 [GIN]  | 200  |     833.459µs |             ::1 |  GET  /cupping/score/bean/17
+[INFO][logger.go:44]2025/12/04 12:02:25 [GIN]  | 204  |       5.625µs |             ::1 |  OPTIONS  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 12:02:25 [GIN]  | 200  |   35.785959ms |             ::1 |  GET  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 12:02:28 [GIN]  | 204  |      31.875µs |             ::1 |  OPTIONS  /bean/17
+[INFO][logger.go:44]2025/12/04 12:02:28 [GIN]  | 200  |    1.947917ms |             ::1 |  GET  /bean/17
+[INFO][logger.go:44]2025/12/04 12:02:28 [GIN]  | 204  |       4.459µs |             ::1 |  OPTIONS  /cupping/score/bean/17
+[INFO][logger.go:44]2025/12/04 12:02:28 [GIN]  | 200  |     858.958µs |             ::1 |  GET  /cupping/score/bean/17
+[INFO][logger.go:44]2025/12/04 12:02:29 [GIN]  | 204  |      40.166µs |             ::1 |  OPTIONS  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 12:02:29 [GIN]  | 200  |   23.447791ms |             ::1 |  GET  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 12:03:01 [GIN]  | 204  |       4.375µs |             ::1 |  OPTIONS  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 12:03:01 [GIN]  | 200  |   43.565916ms |             ::1 |  GET  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 12:04:42 [GIN]  | 204  |       4.584µs |             ::1 |  OPTIONS  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 12:04:42 [GIN]  | 200  |   31.016958ms |             ::1 |  GET  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 12:06:19 [GIN]  | 204  |       4.667µs |             ::1 |  OPTIONS  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 12:06:19 [GIN]  | 200  |     29.0485ms |             ::1 |  GET  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 12:06:31 [GIN]  | 204  |       10.75µs |             ::1 |  OPTIONS  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 12:06:31 [GIN]  | 200  |   25.667875ms |             ::1 |  GET  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 12:06:54 [GIN]  | 204  |           4µs |             ::1 |  OPTIONS  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 12:06:54 [GIN]  | 200  |   34.820625ms |             ::1 |  GET  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 12:14:29 [GIN]  | 204  |      21.583µs |             ::1 |  OPTIONS  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 12:14:29 [GIN]  | 200  |  100.049167ms |             ::1 |  GET  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 12:14:32 [GIN]  | 204  |       3.833µs |             ::1 |  OPTIONS  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 12:14:32 [GIN]  | 200  |   44.385542ms |             ::1 |  GET  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 12:14:57 [GIN]  | 204  |      12.584µs |             ::1 |  OPTIONS  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 12:14:57 [GIN]  | 200  |   27.463417ms |             ::1 |  GET  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 12:19:14 [GIN]  | 204  |      50.542µs |             ::1 |  OPTIONS  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2025/12/04 12:19:14 [GIN]  | 200  |     422.667µs |             ::1 |  GET  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+2025/12/04 23:55:23 日志系统初始化完成，文件路径： .runtime/logs/log20251204.log 日志级别： DEBUG
+2025/12/04 23:55:23 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/04 23:55:23 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/04 23:55:23 自动日志轮转已启动
+[INFO][main.go:56]2025/12/04 23:55:23 logger setup env: dev
+2025/12/04 23:55:36 日志系统初始化完成，文件路径： .runtime/logs/log20251204.log 日志级别： DEBUG
+2025/12/04 23:55:36 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/04 23:55:36 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/04 23:55:36 自动日志轮转已启动
+[INFO][main.go:56]2025/12/04 23:55:36 logger setup env: dev
+2025/12/04 23:55:55 日志系统初始化完成，文件路径： .runtime/logs/log20251204.log 日志级别： DEBUG
+2025/12/04 23:55:55 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/04 23:55:55 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/04 23:55:55 自动日志轮转已启动
+[INFO][main.go:56]2025/12/04 23:55:55 logger setup env: dev
+2025/12/04 23:56:11 日志系统初始化完成，文件路径： .runtime/logs/log20251204.log 日志级别： DEBUG
+2025/12/04 23:56:11 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/04 23:56:11 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/04 23:56:11 自动日志轮转已启动
+[INFO][main.go:56]2025/12/04 23:56:11 logger setup env: dev
+2025/12/04 23:56:38 日志系统初始化完成，文件路径： .runtime/logs/log20251204.log 日志级别： DEBUG
+2025/12/04 23:56:38 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/04 23:56:38 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/04 23:56:38 自动日志轮转已启动
+[INFO][main.go:56]2025/12/04 23:56:38 logger setup env: dev
+2025/12/04 23:56:51 日志系统初始化完成，文件路径： .runtime/logs/log20251204.log 日志级别： DEBUG
+2025/12/04 23:56:51 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/04 23:56:51 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/04 23:56:51 自动日志轮转已启动
+[INFO][main.go:56]2025/12/04 23:56:51 logger setup env: dev
+2025/12/04 23:56:57 日志系统初始化完成，文件路径： .runtime/logs/log20251204.log 日志级别： DEBUG
+2025/12/04 23:56:57 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/04 23:56:57 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/04 23:56:57 自动日志轮转已启动
+[INFO][main.go:56]2025/12/04 23:56:57 logger setup env: dev
+2025/12/04 23:57:01 日志系统初始化完成，文件路径： .runtime/logs/log20251204.log 日志级别： DEBUG
+2025/12/04 23:57:01 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/04 23:57:01 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/04 23:57:01 自动日志轮转已启动
+[INFO][main.go:56]2025/12/04 23:57:01 logger setup env: dev
+2025/12/04 23:57:27 日志系统初始化完成，文件路径： .runtime/logs/log20251204.log 日志级别： DEBUG
+2025/12/04 23:57:27 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/04 23:57:27 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/04 23:57:27 自动日志轮转已启动
+[INFO][main.go:56]2025/12/04 23:57:27 logger setup env: dev

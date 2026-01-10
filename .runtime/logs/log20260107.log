@@ -1,0 +1,108 @@
+2026/01/07 11:19:00 日志系统初始化完成，文件路径： .runtime/logs/log20260107.log 日志级别： DEBUG
+2026/01/07 11:19:00 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2026/01/07 11:19:00 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2026/01/07 11:19:00 自动日志轮转已启动
+[INFO][main.go:56]2026/01/07 11:19:00 logger setup env: dev
+[INFO][logger.go:44]2026/01/07 11:20:31 [GIN]  | 204  |       9.125µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:20:31 [GIN]  | 204  |       89.75µs |             ::1 |  OPTIONS  /bean/total
+[INFO][logger.go:44]2026/01/07 11:20:31 [GIN]  | 204  |      66.792µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:20:31 [GIN]  | 204  |      87.292µs |             ::1 |  OPTIONS  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2026/01/07 11:20:31 [GIN]  | 200  |     212.458µs |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2026/01/07 11:20:31 [GIN]  | 401  |         785µs |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:20:31 [GIN]  | 401  |     732.792µs |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:20:31 [GIN]  | 401  |         971µs |             ::1 |  GET  /bean/total
+[INFO][logger.go:44]2026/01/07 11:20:31 [GIN]  | 204  |       4.792µs |             ::1 |  OPTIONS  /auth/refresh
+[INFO][logger.go:44]2026/01/07 11:20:31 [GIN]  | 200  |   11.034667ms |             ::1 |  POST  /auth/refresh
+[INFO][logger.go:44]2026/01/07 11:20:32 [GIN]  | 204  |       8.708µs |             ::1 |  OPTIONS  /common/upconfig/default
+[INFO][logger.go:44]2026/01/07 11:20:32 [GIN]  | 204  |       4.375µs |             ::1 |  OPTIONS  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2026/01/07 11:20:32 [GIN]  | 204  |           2µs |             ::1 |  OPTIONS  /supplier?type=bean
+[INFO][logger.go:44]2026/01/07 11:20:32 [GIN]  | 200  |       56.75µs |             ::1 |  GET  /common/upconfig/default
+[INFO][logger.go:44]2026/01/07 11:20:32 [GIN]  | 200  |      76.125µs |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2026/01/07 11:20:32 [GIN]  | 200  |    2.429709ms |             ::1 |  GET  /supplier?type=bean
+[INFO][logger.go:44]2026/01/07 11:20:47 [GIN]  | 204  |      20.125µs |             ::1 |  OPTIONS  /bean
+[INFO][logger.go:44]2026/01/07 11:20:47 [GIN]  | 401  |     699.625µs |             ::1 |  POST  /bean
+[INFO][logger.go:44]2026/01/07 11:20:47 [GIN]  | 204  |      11.292µs |             ::1 |  OPTIONS  /auth/refresh
+[INFO][logger.go:44]2026/01/07 11:20:47 [GIN]  | 200  |    1.052208ms |             ::1 |  POST  /auth/refresh
+[INFO][logger.go:44]2026/01/07 11:21:04 [GIN]  | 204  |      15.625µs |             ::1 |  OPTIONS  /bean
+[INFO][logger.go:44]2026/01/07 11:21:04 [GIN]  | 401  |     762.708µs |             ::1 |  POST  /bean
+[INFO][logger.go:44]2026/01/07 11:21:04 [GIN]  | 204  |       9.041µs |             ::1 |  OPTIONS  /auth/refresh
+[INFO][logger.go:44]2026/01/07 11:21:04 [GIN]  | 200  |    1.230292ms |             ::1 |  POST  /auth/refresh
+[INFO][logger.go:44]2026/01/07 11:28:33 [GIN]  | 204  |          38µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:28:33 [GIN]  | 204  |       18.25µs |             ::1 |  OPTIONS  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2026/01/07 11:28:33 [GIN]  | 204  |          22µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:28:33 [GIN]  | 204  |         1.5µs |             ::1 |  OPTIONS  /bean/total
+[INFO][logger.go:44]2026/01/07 11:28:33 [GIN]  | 401  |     646.708µs |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:28:33 [GIN]  | 401  |        1.38ms |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:28:33 [GIN]  | 200  |     143.208µs |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2026/01/07 11:28:33 [GIN]  | 401  |     347.291µs |             ::1 |  GET  /bean/total
+[INFO][logger.go:44]2026/01/07 11:28:38 [GIN]  | 204  |      21.459µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:28:38 [GIN]  | 204  |       3.333µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:28:38 [GIN]  | 204  |      11.125µs |             ::1 |  OPTIONS  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2026/01/07 11:28:38 [GIN]  | 204  |       6.417µs |             ::1 |  OPTIONS  /bean/total
+[INFO][logger.go:44]2026/01/07 11:28:38 [GIN]  | 401  |     382.458µs |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:28:38 [GIN]  | 200  |      64.625µs |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2026/01/07 11:28:38 [GIN]  | 401  |     403.625µs |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:28:38 [GIN]  | 401  |     136.625µs |             ::1 |  GET  /bean/total
+[INFO][logger.go:44]2026/01/07 11:28:51 [GIN]  | 204  |      12.667µs |             ::1 |  OPTIONS  /auth/login
+[INFO][logger.go:44]2026/01/07 11:28:51 [GIN]  | 200  |   10.423084ms |             ::1 |  POST  /auth/login
+[INFO][logger.go:44]2026/01/07 11:28:53 [GIN]  | 204  |      26.208µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:28:53 [GIN]  | 204  |       6.375µs |             ::1 |  OPTIONS  /bean/total
+[INFO][logger.go:44]2026/01/07 11:28:53 [GIN]  | 200  |     5.39525ms |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:28:53 [GIN]  | 200  |    5.716084ms |             ::1 |  GET  /bean/total
+[INFO][logger.go:44]2026/01/07 11:28:54 [GIN]  | 204  |       6.916µs |             ::1 |  OPTIONS  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2026/01/07 11:28:54 [GIN]  | 204  |       2.791µs |             ::1 |  OPTIONS  /common/upconfig/default
+[INFO][logger.go:44]2026/01/07 11:28:54 [GIN]  | 204  |       2.416µs |             ::1 |  OPTIONS  /supplier?type=bean
+[INFO][logger.go:44]2026/01/07 11:28:54 [GIN]  | 200  |     104.541µs |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2026/01/07 11:28:54 [GIN]  | 200  |     262.958µs |             ::1 |  GET  /common/upconfig/default
+[INFO][logger.go:44]2026/01/07 11:28:54 [GIN]  | 200  |    1.486083ms |             ::1 |  GET  /supplier?type=bean
+[INFO][logger.go:44]2026/01/07 11:28:58 [GIN]  | 204  |        9.25µs |             ::1 |  OPTIONS  /bean
+[INFO][logger.go:44]2026/01/07 11:28:58 [GIN]  | 200  |     544.416µs |             ::1 |  POST  /bean
+[INFO][logger.go:44]2026/01/07 11:29:14 [GIN]  | 204  |       9.666µs |             ::1 |  OPTIONS  /bean
+[INFO][logger.go:44]2026/01/07 11:29:14 [GIN]  | 200  |     852.458µs |             ::1 |  POST  /bean
+[INFO][logger.go:44]2026/01/07 11:32:36 [GIN]  | 204  |      23.166µs |             ::1 |  OPTIONS  /bean
+[INFO][logger.go:44]2026/01/07 11:32:36 [GIN]  | 200  |     1.05875ms |             ::1 |  POST  /bean
+[INFO][logger.go:44]2026/01/07 11:32:40 [GIN]  | 204  |       5.792µs |             ::1 |  OPTIONS  /bean
+[INFO][logger.go:44]2026/01/07 11:32:40 [GIN]  | 200  |    8.407875ms |             ::1 |  POST  /bean
+[INFO][logger.go:44]2026/01/07 11:32:44 [GIN]  | 204  |       14.75µs |             ::1 |  OPTIONS  /bean
+[INFO][logger.go:44]2026/01/07 11:32:44 [GIN]  | 200  |   23.811333ms |             ::1 |  POST  /bean
+[INFO][logger.go:44]2026/01/07 11:32:44 [GIN]  | 204  |       8.875µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:32:44 [GIN]  | 204  |       4.459µs |             ::1 |  OPTIONS  /bean/total
+[INFO][logger.go:44]2026/01/07 11:32:44 [GIN]  | 200  |       2.096ms |             ::1 |  GET  /bean/total
+[INFO][logger.go:44]2026/01/07 11:32:44 [GIN]  | 200  |    3.903542ms |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:33:11 [GIN]  | 204  |       8.333µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:33:11 [GIN]  | 204  |       4.667µs |             ::1 |  OPTIONS  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2026/01/07 11:33:11 [GIN]  | 204  |       2.458µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:33:11 [GIN]  | 204  |       3.416µs |             ::1 |  OPTIONS  /bean/total
+[INFO][logger.go:44]2026/01/07 11:33:11 [GIN]  | 200  |      85.958µs |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2026/01/07 11:33:11 [GIN]  | 200  |    1.982209ms |             ::1 |  GET  /bean/total
+[INFO][logger.go:44]2026/01/07 11:33:11 [GIN]  | 200  |    4.354333ms |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:33:11 [GIN]  | 200  |    4.522959ms |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:33:26 [GIN]  | 204  |      10.042µs |             ::1 |  OPTIONS  /supplier?type=bean
+[INFO][logger.go:44]2026/01/07 11:33:26 [GIN]  | 204  |       7.292µs |             ::1 |  OPTIONS  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2026/01/07 11:33:26 [GIN]  | 204  |      21.083µs |             ::1 |  OPTIONS  /common/upconfig/default
+[INFO][logger.go:44]2026/01/07 11:33:26 [GIN]  | 200  |      333.75µs |             ::1 |  GET  /common/upconfig/default
+[INFO][logger.go:44]2026/01/07 11:33:26 [GIN]  | 200  |      97.167µs |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2026/01/07 11:33:26 [GIN]  | 200  |    2.892833ms |             ::1 |  GET  /supplier?type=bean
+[INFO][logger.go:44]2026/01/07 11:33:44 [GIN]  | 204  |      19.334µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:33:44 [GIN]  | 204  |           6µs |             ::1 |  OPTIONS  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2026/01/07 11:33:44 [GIN]  | 204  |       1.625µs |             ::1 |  OPTIONS  /bean/total
+[INFO][logger.go:44]2026/01/07 11:33:44 [GIN]  | 204  |        6.75µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:33:44 [GIN]  | 200  |      65.084µs |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2026/01/07 11:33:44 [GIN]  | 200  |    1.746208ms |             ::1 |  GET  /bean/total
+[INFO][logger.go:44]2026/01/07 11:33:44 [GIN]  | 200  |    2.985583ms |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:33:44 [GIN]  | 200  |    2.949042ms |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:35:54 [GIN]  | 204  |      18.125µs |             ::1 |  OPTIONS  /bean/total
+[INFO][logger.go:44]2026/01/07 11:35:54 [GIN]  | 204  |      25.417µs |             ::1 |  OPTIONS  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2026/01/07 11:35:54 [GIN]  | 204  |       5.666µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:35:54 [GIN]  | 204  |      55.958µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:35:54 [GIN]  | 200  |     150.042µs |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2026/01/07 11:35:54 [GIN]  | 200  |       583.5µs |             ::1 |  GET  /bean/total
+[INFO][logger.go:44]2026/01/07 11:35:54 [GIN]  | 200  |    1.049125ms |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:35:54 [GIN]  | 200  |    1.254125ms |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2026/01/07 11:35:54 [GIN]  | 204  |       6.542µs |             ::1 |  OPTIONS  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+[INFO][logger.go:44]2026/01/07 11:35:54 [GIN]  | 200  |     696.167µs |             ::1 |  GET  /bean/allprice?leveltype=c&pagesize=100&owner=shop
+2026/01/07 11:42:30 日志系统初始化完成，文件路径： .runtime/logs/log20260107.log 日志级别： DEBUG
+2026/01/07 11:42:30 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2026/01/07 11:42:30 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2026/01/07 11:42:30 自动日志轮转已启动
+[INFO][main.go:56]2026/01/07 11:42:30 logger setup env: dev

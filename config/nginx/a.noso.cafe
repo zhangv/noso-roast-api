@@ -1,0 +1,80 @@
+##
+# sudo ln -s /home2/noso-api/config/nginx/a.noso.cafe /etc/nginx/sites-enabled/a.noso.cafe
+##
+
+server {
+    server_name a.noso.cafe;
+    access_log /home2/noso-api/logs/admin-access.log;
+    error_log /home2/noso-api/logs/admin-error.log;
+    root /home2/noso-admin/current;    
+    location / {
+        index index.html index.htm;
+       #deny all;
+        try_files $uri $uri/ /index.html =404;
+        expires 0;
+        add_header Cache-Control 'no-store, no-cache, must-revalidate, proxy-revalidate';
+    }
+
+    location ~ /version\.json {
+        expires 0;
+        add_header Cache-Control 'no-store, no-cache, must-revalidate, proxy-revalidate';
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+
+    #sw.js应该配置什么策略？
+    location ~ /sw\.js {
+        expires 0;
+        add_header Cache-Control 'no-store, no-cache, must-revalidate, proxy-revalidate';
+    }
+
+    # 给静态资源设置一个长期缓存
+    location ~ \.(?:jpg|jpeg|gif|png|ico|cur|gz|svg|svgz|mp4|ogg|ogv|webm|htc|woff|woff2|mp3)$ {
+        expires 1y;
+        access_log off;
+        add_header Cache-Control "public";
+        # Stop deep linking or hot linking
+        # h5.biasur.com配置了cdn全站回源加速
+        valid_referers none blocked hahacking.com noso.cafe a.noso.cafe;
+        if ($invalid_referer) {
+            return   403;
+        }
+    }
+
+
+    gzip on; #开启gzip
+    gzip_disable "msie6"; #IE6不使用gzip
+    gzip_vary on; #设置为on会在Header里增加 "Vary: Accept-Encoding"
+    gzip_proxied any; #代理结果数据的压缩
+    gzip_comp_level 6; #gzip压缩比（1~9），越小压缩效果越差，但是越大处理越慢，所以一般取中间值
+    gzip_buffers 16 8k; #获取多少内存用于缓存压缩结果
+    gzip_http_version 1.1; #识别http协议的版本
+    gzip_min_length 1k; #设置允许压缩的页面最小字节数，超过1k的文件会被压缩
+    gzip_types application/javascript text/plain text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+
+
+
+
+
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/noso.cafe/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/noso.cafe/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
+}
+
+server {
+    if ($host = a.noso.cafe) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+    server_name a.noso.cafe;
+    listen 80;
+    return 404; # managed by Certbot
+
+
+}

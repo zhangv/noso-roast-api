@@ -1,0 +1,251 @@
+2025/12/19 11:38:35 日志系统初始化完成，文件路径： .runtime/logs/log20251219.log 日志级别： DEBUG
+2025/12/19 11:38:35 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/19 11:38:35 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/19 11:38:35 自动日志轮转已启动
+[INFO][main.go:56]2025/12/19 11:38:35 logger setup env: dev
+[INFO][logger.go:44]2025/12/19 11:40:19 [GIN]  | 204  |      46.583µs |             ::1 |  OPTIONS  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 11:40:19 [GIN]  | 204  |      16.541µs |             ::1 |  OPTIONS  /bean/total
+[INFO][logger.go:44]2025/12/19 11:40:19 [GIN]  | 204  |      60.958µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:40:19 [GIN]  | 204  |      52.542µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:40:19 [GIN]  | 401  |     122.791µs |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:40:19 [GIN]  | 401  |     126.958µs |             ::1 |  GET  /bean/total
+[INFO][logger.go:44]2025/12/19 11:40:19 [GIN]  | 200  |     210.875µs |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 11:40:19 [GIN]  | 401  |      50.958µs |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:40:40 [GIN]  | 204  |       5.166µs |             ::1 |  OPTIONS  /roast?pageno=1&pagesize=10&sortBy=updated_at&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:40:40 [GIN]  | 204  |       6.333µs |             ::1 |  OPTIONS  /roast?pageno=1&pagesize=10&sortBy=updated_at&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:40:40 [GIN]  | 204  |       2.625µs |             ::1 |  OPTIONS  /roast/meta/RoastStatus
+[INFO][logger.go:44]2025/12/19 11:40:40 [GIN]  | 401  |      35.541µs |             ::1 |  GET  /roast?pageno=1&pagesize=10&sortBy=updated_at&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:40:40 [GIN]  | 200  |      93.167µs |             ::1 |  GET  /roast/meta/RoastStatus
+[INFO][logger.go:44]2025/12/19 11:40:40 [GIN]  | 401  |      61.916µs |             ::1 |  GET  /roast?pageno=1&pagesize=10&sortBy=updated_at&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:40:47 [GIN]  | 204  |       4.375µs |             ::1 |  OPTIONS  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 11:40:47 [GIN]  | 204  |       4.333µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:40:47 [GIN]  | 204  |       2.458µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:40:47 [GIN]  | 204  |       1.958µs |             ::1 |  OPTIONS  /bean/total
+[INFO][logger.go:44]2025/12/19 11:40:47 [GIN]  | 401  |      14.458µs |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:40:47 [GIN]  | 401  |      18.292µs |             ::1 |  GET  /bean/total
+[INFO][logger.go:44]2025/12/19 11:40:47 [GIN]  | 200  |       128.5µs |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 11:40:47 [GIN]  | 401  |      16.583µs |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:44:15 [GIN]  | 204  |      73.042µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:44:15 [GIN]  | 204  |      10.083µs |             ::1 |  OPTIONS  /bean/total
+[INFO][logger.go:44]2025/12/19 11:44:15 [GIN]  | 204  |       5.666µs |             ::1 |  OPTIONS  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 11:44:15 [GIN]  | 204  |       5.791µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:44:15 [GIN]  | 401  |      32.208µs |             ::1 |  GET  /bean/total
+[INFO][logger.go:44]2025/12/19 11:44:15 [GIN]  | 401  |     129.667µs |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:44:15 [GIN]  | 200  |    1.454875ms |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 11:44:15 [GIN]  | 401  |      21.875µs |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:44:17 [GIN]  | 401  |     270.917µs |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:44:17 [GIN]  | 401  |      87.833µs |             ::1 |  GET  /bean/total
+[INFO][logger.go:44]2025/12/19 11:44:17 [GIN]  | 200  |     139.666µs |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 11:44:17 [GIN]  | 401  |      11.459µs |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:44:23 [GIN]  | 204  |       5.833µs |             ::1 |  OPTIONS  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 11:44:23 [GIN]  | 204  |       6.416µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:44:23 [GIN]  | 204  |           8µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:44:23 [GIN]  | 204  |       2.333µs |             ::1 |  OPTIONS  /bean/total
+[INFO][logger.go:44]2025/12/19 11:44:23 [GIN]  | 401  |      15.333µs |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:44:23 [GIN]  | 200  |     115.167µs |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 11:44:23 [GIN]  | 401  |        9.75µs |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:44:23 [GIN]  | 401  |      94.542µs |             ::1 |  GET  /bean/total
+[INFO][logger.go:44]2025/12/19 11:47:16 [GIN]  | 204  |      54.709µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:47:16 [GIN]  | 204  |      23.125µs |             ::1 |  OPTIONS  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 11:47:16 [GIN]  | 204  |      47.375µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:47:16 [GIN]  | 204  |      60.542µs |             ::1 |  OPTIONS  /bean/total
+[INFO][logger.go:44]2025/12/19 11:47:16 [GIN]  | 401  |      97.125µs |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:47:16 [GIN]  | 401  |      22.791µs |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:47:16 [GIN]  | 401  |        6.25µs |             ::1 |  GET  /bean/total
+[INFO][logger.go:44]2025/12/19 11:47:16 [GIN]  | 200  |      54.292µs |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 11:47:49 [GIN]  | 204  |      65.416µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:47:49 [GIN]  | 204  |      15.417µs |             ::1 |  OPTIONS  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 11:47:49 [GIN]  | 204  |      15.542µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:47:49 [GIN]  | 204  |      18.458µs |             ::1 |  OPTIONS  /bean/total
+[INFO][logger.go:44]2025/12/19 11:47:49 [GIN]  | 401  |      34.292µs |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:47:49 [GIN]  | 401  |      36.375µs |             ::1 |  GET  /bean/total
+[INFO][logger.go:44]2025/12/19 11:47:49 [GIN]  | 401  |     314.333µs |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:47:49 [GIN]  | 200  |     124.583µs |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 11:48:00 [GIN]  | 204  |      46.584µs |             ::1 |  OPTIONS  /auth/login
+[INFO][logger.go:44]2025/12/19 11:48:00 [GIN]  | 200  |   62.903292ms |             ::1 |  POST  /auth/login
+[INFO][logger.go:44]2025/12/19 11:48:03 [GIN]  | 204  |      18.334µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:48:03 [GIN]  | 204  |      30.125µs |             ::1 |  OPTIONS  /bean/total
+[INFO][logger.go:44]2025/12/19 11:48:03 [GIN]  | 200  |    6.053667ms |             ::1 |  GET  /bean/total
+[INFO][logger.go:44]2025/12/19 11:48:03 [GIN]  | 200  |   12.512083ms |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:48:09 [GIN]  | 204  |      20.541µs |             ::1 |  OPTIONS  /common/upconfig/default
+[INFO][logger.go:44]2025/12/19 11:48:09 [GIN]  | 204  |        11.5µs |             ::1 |  OPTIONS  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 11:48:09 [GIN]  | 204  |      16.417µs |             ::1 |  OPTIONS  /supplier?type=bean
+[INFO][logger.go:44]2025/12/19 11:48:09 [GIN]  | 200  |      63.334µs |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 11:48:09 [GIN]  | 200  |     366.417µs |             ::1 |  GET  /common/upconfig/default
+[INFO][logger.go:44]2025/12/19 11:48:09 [GIN]  | 200  |    2.721041ms |             ::1 |  GET  /supplier?type=bean
+[INFO][logger.go:44]2025/12/19 11:48:36 [GIN]  | 204  |      20.583µs |             ::1 |  OPTIONS  /bean
+[INFO][logger.go:44]2025/12/19 11:48:36 [GIN]  | 200  |    1.120708ms |             ::1 |  POST  /bean
+2025/12/19 11:51:06 日志系统初始化完成，文件路径： .runtime/logs/log20251219.log 日志级别： DEBUG
+2025/12/19 11:51:06 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/19 11:51:06 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/19 11:51:06 自动日志轮转已启动
+[INFO][main.go:56]2025/12/19 11:51:06 logger setup env: dev
+[INFO][logger.go:44]2025/12/19 11:52:39 [GIN]  | 204  |      12.542µs |             ::1 |  OPTIONS  /bean?pageno=84&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:52:39 [GIN]  | 200  |   10.949209ms |             ::1 |  GET  /bean?pageno=84&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 11:52:42 [GIN]  | 204  |      35.333µs |             ::1 |  OPTIONS  /common/upconfig/default
+[INFO][logger.go:44]2025/12/19 11:52:42 [GIN]  | 204  |      28.042µs |             ::1 |  OPTIONS  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 11:52:42 [GIN]  | 204  |       15.25µs |             ::1 |  OPTIONS  /supplier?type=bean
+[INFO][logger.go:44]2025/12/19 11:52:42 [GIN]  | 200  |     275.166µs |             ::1 |  GET  /common/upconfig/default
+[INFO][logger.go:44]2025/12/19 11:52:42 [GIN]  | 200  |       45.75µs |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 11:52:42 [GIN]  | 200  |     1.79925ms |             ::1 |  GET  /supplier?type=bean
+[INFO][logger.go:44]2025/12/19 11:52:57 [GIN]  | 204  |      42.416µs |             ::1 |  OPTIONS  /bean
+[INFO][logger.go:44]2025/12/19 11:52:57 [GIN]  | 200  |     979.917µs |             ::1 |  POST  /bean
+2025/12/19 11:54:52 日志系统初始化完成，文件路径： .runtime/logs/log20251219.log 日志级别： DEBUG
+2025/12/19 11:54:52 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/19 11:54:52 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/19 11:54:52 自动日志轮转已启动
+[INFO][main.go:56]2025/12/19 11:54:52 logger setup env: dev
+2025/12/19 11:56:35 日志系统初始化完成，文件路径： .runtime/logs/log20251219.log 日志级别： DEBUG
+2025/12/19 11:56:35 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/19 11:56:35 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/19 11:56:35 自动日志轮转已启动
+[INFO][main.go:56]2025/12/19 11:56:35 logger setup env: dev
+2025/12/19 12:03:09 日志系统初始化完成，文件路径： .runtime/logs/log20251219.log 日志级别： DEBUG
+2025/12/19 12:03:09 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/19 12:03:09 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/19 12:03:09 自动日志轮转已启动
+[INFO][main.go:56]2025/12/19 12:03:09 logger setup env: dev
+2025/12/19 12:03:37 日志系统初始化完成，文件路径： .runtime/logs/log20251219.log 日志级别： DEBUG
+2025/12/19 12:03:37 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/19 12:03:37 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/19 12:03:37 自动日志轮转已启动
+[INFO][main.go:56]2025/12/19 12:03:37 logger setup env: dev
+2025/12/19 12:06:03 日志系统初始化完成，文件路径： .runtime/logs/log20251219.log 日志级别： DEBUG
+2025/12/19 12:06:03 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/19 12:06:03 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/19 12:06:03 自动日志轮转已启动
+[INFO][main.go:56]2025/12/19 12:06:03 logger setup env: dev
+2025/12/19 12:09:30 日志系统初始化完成，文件路径： .runtime/logs/log20251219.log 日志级别： DEBUG
+2025/12/19 12:09:30 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/19 12:09:30 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/19 12:09:30 自动日志轮转已启动
+[INFO][main.go:56]2025/12/19 12:09:30 logger setup env: dev
+2025/12/19 12:10:48 日志系统初始化完成，文件路径： .runtime/logs/log20251219.log 日志级别： DEBUG
+2025/12/19 12:10:48 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/19 12:10:48 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/19 12:10:48 自动日志轮转已启动
+[INFO][main.go:56]2025/12/19 12:10:48 logger setup env: dev
+2025/12/19 12:11:17 日志系统初始化完成，文件路径： .runtime/logs/log20251219.log 日志级别： DEBUG
+2025/12/19 12:11:17 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/19 12:11:17 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/19 12:11:17 自动日志轮转已启动
+[INFO][main.go:56]2025/12/19 12:11:17 logger setup env: dev
+[INFO][logger.go:44]2025/12/19 12:11:29 [GIN]  | 204  |       5.417µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 12:11:29 [GIN]  | 204  |      88.166µs |             ::1 |  OPTIONS  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 12:11:29 [GIN]  | 204  |      90.833µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 12:11:29 [GIN]  | 204  |       7.459µs |             ::1 |  OPTIONS  /bean/total
+[INFO][logger.go:44]2025/12/19 12:11:29 [GIN]  | 200  |     250.375µs |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 12:11:29 [GIN]  | 200  |    2.171958ms |             ::1 |  GET  /bean/total
+[INFO][logger.go:44]2025/12/19 12:11:29 [GIN]  | 200  |    3.368584ms |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 12:11:29 [GIN]  | 200  |       3.735ms |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 12:11:36 [GIN]  | 204  |      18.666µs |             ::1 |  OPTIONS  /common/upconfig/default
+[INFO][logger.go:44]2025/12/19 12:11:36 [GIN]  | 204  |       3.083µs |             ::1 |  OPTIONS  /supplier?type=bean
+[INFO][logger.go:44]2025/12/19 12:11:36 [GIN]  | 204  |       4.917µs |             ::1 |  OPTIONS  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 12:11:36 [GIN]  | 200  |      83.083µs |             ::1 |  GET  /common/upconfig/default
+[INFO][logger.go:44]2025/12/19 12:11:36 [GIN]  | 200  |      28.292µs |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 12:11:36 [GIN]  | 200  |    1.469625ms |             ::1 |  GET  /supplier?type=bean
+[INFO][logger.go:44]2025/12/19 12:11:43 [GIN]  | 204  |          10µs |             ::1 |  OPTIONS  /bean
+[INFO][logger.go:44]2025/12/19 12:11:43 [GIN]  | 200  |     777.875µs |             ::1 |  POST  /bean
+2025/12/19 12:12:56 日志系统初始化完成，文件路径： .runtime/logs/log20251219.log 日志级别： DEBUG
+2025/12/19 12:12:56 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/19 12:12:56 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/19 12:12:56 自动日志轮转已启动
+[INFO][main.go:56]2025/12/19 12:12:56 logger setup env: dev
+[INFO][logger.go:44]2025/12/19 12:12:59 [GIN]  | 204  |      15.833µs |             ::1 |  OPTIONS  /bean
+[INFO][logger.go:44]2025/12/19 12:12:59 [GIN]  | 200  |    1.873041ms |             ::1 |  POST  /bean
+[INFO][logger.go:44]2025/12/19 12:13:16 [GIN]  | 204  |       7.334µs |             ::1 |  OPTIONS  /bean
+[INFO][logger.go:44]2025/12/19 12:13:16 [GIN]  | 200  |     603.166µs |             ::1 |  POST  /bean
+2025/12/19 12:13:50 日志系统初始化完成，文件路径： .runtime/logs/log20251219.log 日志级别： DEBUG
+2025/12/19 12:13:50 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/19 12:13:50 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/19 12:13:50 自动日志轮转已启动
+[INFO][main.go:56]2025/12/19 12:13:50 logger setup env: dev
+[INFO][logger.go:44]2025/12/19 12:14:44 [GIN]  | 204  |       13.25µs |             ::1 |  OPTIONS  /bean
+[INFO][logger.go:44]2025/12/19 12:14:44 [GIN]  | 200  |    17.89225ms |             ::1 |  POST  /bean
+[INFO][logger.go:44]2025/12/19 12:14:44 [GIN]  | 204  |       6.625µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 12:14:44 [GIN]  | 204  |      26.459µs |             ::1 |  OPTIONS  /bean/total
+[INFO][logger.go:44]2025/12/19 12:14:44 [GIN]  | 200  |   11.417083ms |             ::1 |  GET  /bean/total
+[INFO][logger.go:44]2025/12/19 12:14:44 [GIN]  | 200  |    5.280958ms |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 12:14:46 [GIN]  | 204  |       8.667µs |             ::1 |  OPTIONS  /common/upconfig/default
+[INFO][logger.go:44]2025/12/19 12:14:46 [GIN]  | 204  |       4.125µs |             ::1 |  OPTIONS  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 12:14:46 [GIN]  | 204  |       4.459µs |             ::1 |  OPTIONS  /supplier?type=bean
+[INFO][logger.go:44]2025/12/19 12:14:46 [GIN]  | 200  |     177.958µs |             ::1 |  GET  /common/upconfig/default
+[INFO][logger.go:44]2025/12/19 12:14:46 [GIN]  | 200  |     442.125µs |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 12:14:46 [GIN]  | 200  |    2.922959ms |             ::1 |  GET  /supplier?type=bean
+[INFO][logger.go:44]2025/12/19 12:14:51 [GIN]  | 204  |      34.542µs |             ::1 |  OPTIONS  /common/upconfig/default
+[INFO][logger.go:44]2025/12/19 12:14:51 [GIN]  | 204  |           2µs |             ::1 |  OPTIONS  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 12:14:51 [GIN]  | 204  |       3.917µs |             ::1 |  OPTIONS  /supplier?type=bean
+[INFO][logger.go:44]2025/12/19 12:14:51 [GIN]  | 200  |       14.25µs |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 12:14:51 [GIN]  | 200  |     118.417µs |             ::1 |  GET  /common/upconfig/default
+[INFO][logger.go:44]2025/12/19 12:14:51 [GIN]  | 200  |    1.062958ms |             ::1 |  GET  /supplier?type=bean
+[INFO][logger.go:44]2025/12/19 12:14:53 [GIN]  | 204  |       5.833µs |             ::1 |  OPTIONS  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 12:14:53 [GIN]  | 204  |       3.209µs |             ::1 |  OPTIONS  /supplier?type=bean
+[INFO][logger.go:44]2025/12/19 12:14:53 [GIN]  | 204  |      12.625µs |             ::1 |  OPTIONS  /common/upconfig/default
+[INFO][logger.go:44]2025/12/19 12:14:53 [GIN]  | 200  |      58.208µs |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 12:14:53 [GIN]  | 200  |      42.833µs |             ::1 |  GET  /common/upconfig/default
+[INFO][logger.go:44]2025/12/19 12:14:53 [GIN]  | 200  |    1.627458ms |             ::1 |  GET  /supplier?type=bean
+[INFO][logger.go:44]2025/12/19 12:18:53 [GIN]  | 204  |      20.792µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 12:18:53 [GIN]  | 204  |      28.292µs |             ::1 |  OPTIONS  /bean/total
+[INFO][logger.go:44]2025/12/19 12:18:53 [GIN]  | 204  |     426.583µs |             ::1 |  OPTIONS  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 12:18:53 [GIN]  | 204  |     276.708µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 12:18:53 [GIN]  | 200  |      100.75µs |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 12:18:53 [GIN]  | 200  |    13.81725ms |             ::1 |  GET  /bean/total
+[INFO][logger.go:44]2025/12/19 12:18:53 [GIN]  | 200  |   13.201458ms |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 12:18:53 [GIN]  | 200  |   12.733125ms |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 12:19:24 [GIN]  | 204  |     102.375µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 12:19:24 [GIN]  | 204  |      61.083µs |             ::1 |  OPTIONS  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 12:19:24 [GIN]  | 204  |      32.958µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 12:19:24 [GIN]  | 204  |          23µs |             ::1 |  OPTIONS  /bean/total
+[INFO][logger.go:44]2025/12/19 12:19:24 [GIN]  | 200  |     143.667µs |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 12:19:24 [GIN]  | 200  |       2.026ms |             ::1 |  GET  /bean/total
+[INFO][logger.go:44]2025/12/19 12:19:24 [GIN]  | 200  |    2.548625ms |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 12:19:24 [GIN]  | 200  |    2.748125ms |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+2025/12/19 12:20:20 日志系统初始化完成，文件路径： .runtime/logs/log20251219.log 日志级别： DEBUG
+2025/12/19 12:20:20 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/19 12:20:20 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/19 12:20:20 自动日志轮转已启动
+[INFO][main.go:56]2025/12/19 12:20:20 logger setup env: dev
+2025/12/19 12:20:24 日志系统初始化完成，文件路径： .runtime/logs/log20251219.log 日志级别： DEBUG
+2025/12/19 12:20:24 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/19 12:20:24 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/19 12:20:24 自动日志轮转已启动
+[INFO][main.go:56]2025/12/19 12:20:24 logger setup env: dev
+2025/12/19 12:20:44 日志系统初始化完成，文件路径： .runtime/logs/log20251219.log 日志级别： DEBUG
+2025/12/19 12:20:44 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/19 12:20:44 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/19 12:20:44 自动日志轮转已启动
+[INFO][main.go:56]2025/12/19 12:20:44 logger setup env: dev
+2025/12/19 12:21:08 日志系统初始化完成，文件路径： .runtime/logs/log20251219.log 日志级别： DEBUG
+2025/12/19 12:21:08 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/19 12:21:08 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/19 12:21:08 自动日志轮转已启动
+[INFO][main.go:56]2025/12/19 12:21:08 logger setup env: dev
+2025/12/19 12:21:38 日志系统初始化完成，文件路径： .runtime/logs/log20251219.log 日志级别： DEBUG
+2025/12/19 12:21:38 日志轮转配置：最大大小=1024MB，最大保留天数=7天，最大备份数=10个
+[INFO][auto_rotation.go:49]2025/12/19 12:21:38 自动日志轮转管理器已启动
+[INFO][auto_rotation.go:49]2025/12/19 12:21:38 自动日志轮转已启动
+[INFO][main.go:56]2025/12/19 12:21:38 logger setup env: dev
+[INFO][logger.go:44]2025/12/19 12:22:17 [GIN]  | 204  |       8.959µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 12:22:17 [GIN]  | 204  |      46.084µs |             ::1 |  OPTIONS  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 12:22:17 [GIN]  | 204  |      20.875µs |             ::1 |  OPTIONS  /bean/total
+[INFO][logger.go:44]2025/12/19 12:22:17 [GIN]  | 204  |      16.333µs |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 12:22:17 [GIN]  | 200  |     124.583µs |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 12:22:17 [GIN]  | 200  |    1.215792ms |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 12:22:17 [GIN]  | 200  |    1.225958ms |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 12:22:17 [GIN]  | 200  |    1.375292ms |             ::1 |  GET  /bean/total
+[INFO][logger.go:44]2025/12/19 17:28:29 [GIN]  | 204  |    2.356792ms |             ::1 |  OPTIONS  /bean/total
+[INFO][logger.go:44]2025/12/19 17:28:29 [GIN]  | 204  |    2.332625ms |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 17:28:29 [GIN]  | 204  |    2.399958ms |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 17:28:29 [GIN]  | 204  |    2.335667ms |             ::1 |  OPTIONS  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 17:28:29 [GIN]  | 200  |    5.207833ms |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 17:28:29 [GIN]  | 200  |     14.0215ms |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 17:28:29 [GIN]  | 200  |   14.013292ms |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 17:28:29 [GIN]  | 200  |   15.008291ms |             ::1 |  GET  /bean/total
+[INFO][logger.go:44]2025/12/19 17:51:32 [GIN]  | 204  |      2.1145ms |             ::1 |  OPTIONS  /bean/total
+[INFO][logger.go:44]2025/12/19 17:51:32 [GIN]  | 204  |    2.115209ms |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 17:51:32 [GIN]  | 204  |    2.112625ms |             ::1 |  OPTIONS  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 17:51:32 [GIN]  | 204  |    2.125416ms |             ::1 |  OPTIONS  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 17:51:32 [GIN]  | 200  |    6.011541ms |             ::1 |  GET  /bean/meta/BeanType,BeanProcess,BeanStatus
+[INFO][logger.go:44]2025/12/19 17:51:32 [GIN]  | 200  |   20.466583ms |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 17:51:32 [GIN]  | 200  |   21.277583ms |             ::1 |  GET  /bean?pageno=1&pagesize=10&sortBy=id&sortDesc=desc
+[INFO][logger.go:44]2025/12/19 17:51:32 [GIN]  | 200  |   23.367375ms |             ::1 |  GET  /bean/total
